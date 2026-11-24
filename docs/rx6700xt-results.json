@@ -1,0 +1,52 @@
+{
+  "test_date_local": "2026-11-25",
+  "gpu": "AMD Radeon RX 6700 XT",
+  "driver_package": "Adrenalin 26.11.2",
+  "platform": "Windows / Series X profile",
+  "public_base": "e8cad1e1c4c840f1abcc324c1a2cdc5f98f5f14b",
+  "switches": {
+    "VICTORY_PORTABLE_HEAP": "1",
+    "VICTORY_SHADER_LOOP_LIMIT": "256",
+    "VICTORY_D3D12_DRED": "1",
+    "VICTORY_PRESTREAM_IMAGES": "1",
+    "VICTORY_SKIP_PIPELINES": null
+  },
+  "cache_start": "cold",
+  "requested_title_view_slots": 1245184,
+  "host_heap_limit": 1000000,
+  "presented_normal_frame_observations": {
+    "all_black": [
+      2047,
+      2048,
+      2049
+    ],
+    "legible_prologue_menu": [
+      2600,
+      2601,
+      2602
+    ],
+    "visible_figures_yard_and_watchtower": [
+      3000,
+      3001
+    ],
+    "dark_corridor_with_incomplete_figures": [
+      4096
+    ]
+  },
+  "input_evidence": "Test operator reports the controls work; not inferred from an animation or frame delta.",
+  "world_sample": {
+    "frames": 581,
+    "seconds": 597.575,
+    "fps": 0.972
+  },
+  "initial_pso_backlog": {
+    "frame_interval": [
+      1750,
+      2102
+    ],
+    "median_being_built": 1043.0,
+    "median_wait_ms_per_frame": 500.4
+  },
+  "visuals_complete": false,
+  "off_arm_same_binary_gameplay_verified": false
+}

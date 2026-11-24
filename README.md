@@ -1,3 +1,16 @@
+# VIctory · RX 6700 XT 实测分支
+
+本分支基于 [fxceless/victory-fork PR #98](https://github.com/fxceless/victory-fork/pull/98) 的固定提交 [`e8cad1e`](https://github.com/fxceless/victory-fork/commit/e8cad1e1c4c840f1abcc324c1a2cdc5f98f5f14b)，渲染器除**可选的稀疏原帧采样**外保持该提交原样。下面的英文 README 来自上游，里面的性能数据不代表这次 RX 6700 XT 测试。
+
+**我们实际跑到的结果（2026-11-25）：** Windows 上的 RX 6700 XT 能从一段黑屏继续进入序章，显示完整暂停菜单、院中人物、建筑和瞭望塔，测试者确认可以操控。世界阶段有一段约十分钟的实测平均 **0.97 FPS**；走廊过暗、人物局部不完整，不能称为正常可玩。
+
+- [测试条件、逐阶段结果、遗留问题及后续对照](docs/RX6700XT-RESULTS.zh-CN.md)
+- [机器可读结果摘要](docs/rx6700xt-results.json)
+
+不随分支分发游戏、存档、缓存、SDK、转储、编译产物或游戏截图；测试使用玩家自己提供的文件。
+
+---
+
 # VIctory fork (work in progress)
 
 A work-in-progress fork of [VIctory](https://github.com/Marvisak/VIctory), a

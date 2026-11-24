@@ -142,6 +142,9 @@ pub(crate) fn frame_drew(frame: u64, drawn: u64) {
     }
 }
 
+#[path = "prestream_images.rs"]
+mod prestream_images;
+
 /// Whether frame `n` is saved.
 pub(crate) fn wanted(n: u64) -> bool {
     // Before the world, with `VICTORY_CAPTURE_WORLD`: every 16th frame too
@@ -152,7 +155,7 @@ pub(crate) fn wanted(n: u64) -> bool {
     // run, so single frames cannot be compared between runs).
     let first = WORLD.load(std::sync::atomic::Ordering::Relaxed);
     let in_world = world_on() && first != u64::MAX && n > first && (n - first).is_multiple_of(8);
-    folder().is_some() && (n.is_power_of_two() || listed(n) || before_world || in_world)
+    folder().is_some() && (n.is_power_of_two() || listed(n) || before_world || in_world || prestream_images::selected(n))
 }
 
 /// Saves 8-bit RGBA or BGRA rows (`pitch` bytes apart) as frame `n`.
